@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-obsidian text-white antialiased;
+  background-image:
+    radial-gradient(circle at top, rgba(6, 182, 212, 0.12), transparent 28%),
+    radial-gradient(circle at 80% 20%, rgba(16, 185, 129, 0.1), transparent 18%),
+    linear-gradient(180deg, #0a0b0e 0%, #121418 100%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: rgba(16, 185, 129, 0.25);
+  color: #fff;
+}
+
+.hud-grid {
+  background-image: linear-gradient(rgba(148, 163, 184, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(148, 163, 184, 0.08) 1px, transparent 1px);
+  background-size: 54px 54px;
+}
+
+.scan-line::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 0%, rgba(16, 185, 129, 0.08) 50%, transparent 100%);
+  pointer-events: none;
+}
+
+.glass-panel {
+  @apply border border-steel/80 bg-white/5 backdrop-blur-md shadow-panel;
+}
+
+.tactical-chip {
+  @apply inline-flex items-center gap-2 rounded-full border border-slateGlass/90 bg-black/20 px-3 py-1 text-xs font-medium uppercase tracking-tactical text-slate-300;
+}
+
+.section-shell {
+  @apply relative mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+}
+
+.grid-card {
+  @apply glass-panel relative overflow-hidden rounded-2xl p-5 transition duration-300 ease-out;
+}
+
+.grid-card:hover {
+  transform: translateY(-0.25rem);
+  border-color: rgba(16, 185, 129, 0.6);
+  box-shadow: 0 0 0 1px rgba(16, 185, 129, 0.2), 0 0 30px rgba(16, 185, 129, 0.08);
+}
+
+.hud-label {
+  @apply font-mono text-[11px] uppercase tracking-tactical text-slate-400;
+}
+
+.hud-title {
+  @apply font-display text-2xl font-semibold uppercase tracking-wide text-white sm:text-3xl;
+}
+
+.hud-copy {
+  @apply text-sm leading-7 text-slate-300 sm:text-base;
+}
+
+.terminal-button {
+  @apply inline-flex items-center justify-center gap-2 rounded-full border border-slateGlass bg-charcoal px-5 py-3 text-sm font-semibold uppercase tracking-tactical text-white transition;
+}
+
+.terminal-button:hover {
+  border-color: rgba(16, 185, 129, 0.9);
+  background-color: rgba(16, 185, 129, 0.1);
+  color: #10b981;
+}
+
+.terminal-button.secondary {
+  @apply border-slateGlass bg-white/5 text-slate-200;
+}
+
+.terminal-button.secondary:hover {
+  border-color: rgba(6, 182, 212, 0.9);
+  color: #67e8f9;
+}
+
+.nav-link {
+  @apply rounded-full px-3 py-2 text-sm uppercase tracking-tactical text-slate-300 transition hover:bg-white/5 hover:text-white;
+}
