@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { experience } from "@/data/portfolio";
 
@@ -40,6 +41,19 @@ export function Experience() {
             <div className="mt-5 grid gap-4 border-t border-white/5 pt-5 lg:grid-cols-[0.7fr_1.3fr]">
               <div className="rounded-2xl border border-white/5 bg-black/20 p-4">
                 <div className="hud-label">System Notes</div>
+
+                {item.imageSrc ? (
+                  <div className="mt-3 overflow-hidden rounded-2xl border border-white/10 bg-black/30">
+                    <Image
+                      src={item.imageSrc}
+                      alt={item.imageAlt ?? item.title}
+                      width={900}
+                      height={1125}
+                      className="h-full w-full object-cover object-center"
+                    />
+                  </div>
+                ) : null}
+
                 <p className="mt-3 text-sm leading-7 text-slate-300">
                   {item.org} requires operational discipline, traceable execution, and the ability to turn ambiguous requests into stable tooling.
                 </p>
