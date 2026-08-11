@@ -41,6 +41,11 @@ export function Experience() {
             <div className="mt-5 grid gap-4 border-t border-white/5 pt-5 lg:grid-cols-[0.7fr_1.3fr]">
               <div className="rounded-2xl border border-white/5 bg-black/20 p-4">
                 <div className="hud-label">System Notes</div>
+                <p className="mt-3 text-sm leading-7 text-slate-300">
+                  {item.title === "Signal Operator"
+                    ? "Focused on communications training and field exercises while preparing for SIG OP DP1 in Summer 2027."
+                    : `${item.org} requires operational discipline, traceable execution, and the ability to turn ambiguous requests into stable tooling.`}
+                </p>
 
                 {item.imageSrc ? (
                   <div className="mt-3 overflow-hidden rounded-2xl border border-white/10 bg-black/30">
@@ -53,10 +58,6 @@ export function Experience() {
                     />
                   </div>
                 ) : null}
-
-                <p className="mt-3 text-sm leading-7 text-slate-300">
-                  {item.org} requires operational discipline, traceable execution, and the ability to turn ambiguous requests into stable tooling.
-                </p>
               </div>
 
               <ul className="space-y-3">
