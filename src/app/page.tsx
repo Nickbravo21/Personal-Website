@@ -5,7 +5,6 @@ import { AnimatePresence, motion } from "framer-motion";
 import { X } from "lucide-react";
 
 import { Footer } from "@/components/footer";
-import { Gallery } from "@/components/gallery";
 import { Hero } from "@/components/hero";
 import { HudNav } from "@/components/hud-nav";
 import { Experience } from "@/components/experience";
@@ -27,7 +26,6 @@ export default function Home() {
         <Experience />
         <Projects />
         <Skills />
-        <Gallery />
         <Footer onResumeClick={() => setResumeOpen(true)} />
       </div>
 

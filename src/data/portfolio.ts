@@ -113,7 +113,7 @@ export const projects: ProjectItem[] = [
 export const skillGroups: SkillGroup[] = [
   {
     title: "Programming Languages",
-    items: ["C", "C++", "Python", "Java", "JavaScript", "TypeScript", "SQL (Oracle SQL)"],
+    items: ["C", "C++", "Python", "R", "Java", "JavaScript", "TypeScript", "SQL (Oracle SQL)"],
   },
   {
     title: "Enterprise Systems & Data",
