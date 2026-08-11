@@ -4,10 +4,6 @@ export type ExperienceItem = {
   timeline: string;
   domain: string;
   bullets: string[];
-  images?: Array<{
-    src: string;
-    alt: string;
-  }>;
 };
 
 export type ProjectItem = {
@@ -46,9 +42,6 @@ export const experience: ExperienceItem[] = [
     org: "Canadian Armed Forces Reserves",
     timeline: "Active",
     domain: "Communications Training & Field Signals",
-    images: [
-      { src: "/armybmqgrad.jpg", alt: "Vincent Nicholas Buzali at BMQ graduation" },
-    ],
     bullets: [
       "Completed the basic plan and am preparing for SIG OP DP1 in Summer 2027.",
       "Building a foundation in communications procedures, field signals, and disciplined execution during training.",
