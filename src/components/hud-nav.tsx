@@ -3,6 +3,8 @@
 import { ChevronDown, Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
+import { SiteLogo } from "@/components/site-logo";
+
 const links = [
   { href: "#experience", label: "Experience" },
   { href: "#projects", label: "Projects" },
@@ -21,8 +23,8 @@ export function HudNav({ mobileOpen, onToggleMobile }: HudNavProps) {
     <header className="sticky top-0 z-40 border-b border-white/5 bg-obsidian/90 backdrop-blur-xl">
       <div className="section-shell flex items-center justify-between py-4">
         <a href="#top" className="group flex items-center gap-3">
-          <div className="h-10 w-10 rounded-full border border-radar/30 bg-radar/10 p-2 text-radar shadow-glow transition group-hover:scale-105">
-            <ChevronDown className="h-6 w-6 rotate-[-90deg]" />
+          <div className="h-10 w-10 rounded-full border border-radar/30 bg-radar/10 p-1.5 text-radar shadow-glow transition group-hover:scale-105">
+            <SiteLogo className="h-full w-full" />
           </div>
           <div>
             <div className="font-display text-sm uppercase tracking-tactical text-white">Vincent Nicholas Buzali</div>
