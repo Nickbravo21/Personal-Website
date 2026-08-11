@@ -43,7 +43,7 @@ export function Experience() {
                 <div className="hud-label">System Notes</div>
                 <p className="mt-3 text-sm leading-7 text-slate-300">
                   {item.title === "Signal Operator"
-                    ? "Focused on communications training and field exercises while preparing for SIG OP DP1 in Summer 2027."
+                    ? "Learned discipline, staying organized, and working under pressure during communications training and field exercises."
                     : `${item.org} requires operational discipline, traceable execution, and the ability to turn ambiguous requests into stable tooling.`}
                 </p>
 
