@@ -48,7 +48,7 @@ export default function Home() {
               <div className="flex items-start justify-between gap-4">
                 <div>
                   <div className="hud-label">Resume Channel</div>
-                  <h3 className="mt-2 text-2xl font-semibold text-white">Ready for download</h3>
+                  <h3 className="mt-2 text-2xl font-semibold text-white">Corrections are being made</h3>
                 </div>
                 <button
                   type="button"
@@ -61,12 +61,12 @@ export default function Home() {
               </div>
 
               <p className="mt-4 text-sm leading-7 text-slate-300">
-                Resume placeholder is wired for a future PDF asset. Replace the modal content with a direct file link when the final document is ready.
+                The resume is being updated. Please contact me on LinkedIn for the latest version in the meantime.
               </p>
 
               <div className="mt-6 flex flex-col gap-3 sm:flex-row">
-                <a href="#contact" className="terminal-button w-full sm:w-auto" onClick={() => setResumeOpen(false)}>
-                  Go to Contact
+                <a href="https://www.linkedin.com/in/vincent-nb/" target="_blank" rel="noreferrer" className="terminal-button w-full sm:w-auto" onClick={() => setResumeOpen(false)}>
+                  Contact on LinkedIn
                 </a>
                 <button type="button" className="terminal-button secondary w-full sm:w-auto" onClick={() => setResumeOpen(false)}>
                   Close
