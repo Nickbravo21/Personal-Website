@@ -4,8 +4,6 @@ export type ExperienceItem = {
   timeline: string;
   domain: string;
   bullets: string[];
-  imageSrc?: string;
-  imageAlt?: string;
   images?: Array<{
     src: string;
     alt: string;
@@ -49,7 +47,6 @@ export const experience: ExperienceItem[] = [
     timeline: "Active",
     domain: "Communications Training & Field Signals",
     images: [
-      { src: "/armynick.jpeg", alt: "Vincent Nicholas Buzali in military attire" },
       { src: "/armybmqgrad.jpg", alt: "Vincent Nicholas Buzali at BMQ graduation" },
     ],
     bullets: [

@@ -43,7 +43,7 @@ export function Experience() {
                 <div className="hud-label">System Notes</div>
 
                 {item.images?.length ? (
-                  <div className="mt-3 grid gap-3 sm:grid-cols-2">
+                  <div className="mt-3 grid gap-3">
                     {item.images.map((image) => (
                       <div key={image.src} className="overflow-hidden rounded-2xl border border-white/10 bg-black/30">
                         <Image
@@ -55,16 +55,6 @@ export function Experience() {
                         />
                       </div>
                     ))}
-                  </div>
-                ) : item.imageSrc ? (
-                  <div className="mt-3 overflow-hidden rounded-2xl border border-white/10 bg-black/30">
-                    <Image
-                      src={item.imageSrc}
-                      alt={item.imageAlt ?? item.title}
-                      width={900}
-                      height={1125}
-                      className="h-full w-full object-cover object-center"
-                    />
                   </div>
                 ) : null}
 
