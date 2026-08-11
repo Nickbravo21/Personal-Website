@@ -38,7 +38,7 @@ export const experience: ExperienceItem[] = [
     ],
   },
   {
-    title: "CAF Reserves - Signal Operator Path",
+    title: "Signal Operator",
     org: "Canadian Armed Forces Reserves",
     timeline: "Active",
     domain: "Communications Training & Field Signals",
