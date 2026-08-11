@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { ArrowDownRight, ExternalLink, FileDown, MapPin, UserRound } from "lucide-react";
 import { motion } from "framer-motion";
 
@@ -62,17 +63,26 @@ export function Hero({ onResumeClick }: HeroProps) {
               initial={{ opacity: 0, y: 18 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.14 }}
-              className="grid-card"
+              className="grid-card overflow-hidden"
             >
-              <div className="hud-label">Professional Snapshot</div>
-              <div className="mt-4 space-y-4">
-                <div>
-                  <div className="text-sm uppercase tracking-tactical text-slate-400">Current Focus</div>
-                  <div className="mt-2 text-lg font-semibold text-white">Business software, data workflows, and AI-enabled tools</div>
+              <div className="absolute inset-0 bg-gradient-to-b from-white/5 via-transparent to-black/50" />
+              <div className="relative z-10 space-y-4">
+                <div className="aspect-[4/5] overflow-hidden rounded-[1.5rem] border border-white/10 bg-black/20">
+                  <Image
+                    src="/headshot.jpeg"
+                    alt="Vincent Nicholas Buzali portrait"
+                    width={900}
+                    height={1125}
+                    priority
+                    className="h-full w-full object-cover object-center"
+                  />
                 </div>
+
                 <div>
-                  <div className="text-sm uppercase tracking-tactical text-slate-400">Core Stack</div>
-                  <div className="mt-2 text-base leading-7 text-slate-300">TypeScript, React, SQL, Python, Java</div>
+                  <div className="hud-label">Professional Snapshot</div>
+                  <div className="mt-3 text-base leading-7 text-slate-300">
+                    Business software, data workflows, and AI-enabled tools.
+                  </div>
                 </div>
               </div>
             </motion.div>
