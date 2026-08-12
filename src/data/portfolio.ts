@@ -47,7 +47,7 @@ export const experience: ExperienceItem[] = [
     imageSrc: "/armybmqgrad.jpg",
     imageAlt: "Vincent Nicholas Buzali at BMQ graduation",
     bullets: [
-      "Completed the basic plan and am preparing for SIG OP DP1 in Summer 2027.",
+      "Completed BMQ and am preparing for SIG OP DP1 in Summer 2027.",
       "Building a foundation in communications procedures, field signals, and disciplined execution during training.",
     ],
   },
